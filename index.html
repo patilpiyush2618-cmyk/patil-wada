@@ -33,6 +33,37 @@
   .nav-reserve { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 10px 24px; text-decoration: none; transition: all 0.3s; font-family: 'Jost', sans-serif; font-weight: 300; }
   .nav-reserve:hover { background: var(--gold); color: var(--dark); }
 
+  @media (max-width: 768px){
+
+  .container{
+    width:95%;
+    margin:auto;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .rooms-grid,
+  .gallery-grid,
+  .amenities-grid{
+    grid-template-columns:1fr;
+  }
+
+  .booking-form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .booking-form input,
+  .booking-form textarea,
+  .booking-form button{
+    width:100%;
+  }
+
+}
+
   .hero { height: 100vh; position: relative; display: flex; align-items: flex-end; overflow: hidden; }
   .hero-bg { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,23,16,0.15) 0%, rgba(26,23,16,0.6) 100%); }
   .hero-bg-img { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.05); animation: slowZoom 12s ease-out forwards; z-index: -1; }
